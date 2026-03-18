@@ -1,0 +1,45 @@
+{
+  "common": {
+    "title": "Luyện Shadowing để dàng thông qua bất kỳ video nào bạn yêu thích",
+    "videoList": "Danh sách video",
+    "myVideos": "Video của tôi",
+    "recentlyViewed": "Xem gần đây",
+    "streak": "Streak",
+    "upgrade": "Nâng cấp Plus",
+    "language": "Ngôn ngữ",
+    "youtube": "Youtube",
+    "upload": "Tải lên",
+    "placeholder": "Dán link Youtube để bắt đầu",
+    "selectLanguage": "Chọn ngôn ngữ",
+    "selectSubtitle": "Chọn phụ đề",
+    "withSubtitle": "Có phụ đề",
+    "noSubtitle": "Không phụ đề",
+    "createVideo": "Tạo video"
+  },
+  "tabs": {
+    "allVideos": "Toàn bộ",
+    "news": "Tin tức",
+    "beginner": "Mới bắt đầu",
+    "podcast": "Podcast",
+    "technology": "Công nghệ",
+    "business": "Kinh doanh",
+    "ted": "TED",
+    "grammar": "Ngữ pháp",
+    "animation": "Hoạt hình",
+    "shortVideo": "Video ngắn",
+    "movie": "Phim",
+    "travel": "Du lịch",
+    "culture": "Văn hóa",
+    "food": "Ẩm thực",
+    "kids": "Kids"
+  },
+  "time": {
+    "level": "N5 - N4",
+    "views": "lượt xem",
+    "ago": "trước",
+    "hour": "giờ",
+    "days": "ngày",
+    "month": "tháng"
+  },
+  "weekDays": ["Th2", "Th3", "Th4", "Th5", "Th6", "Th7", "CN"]
+}

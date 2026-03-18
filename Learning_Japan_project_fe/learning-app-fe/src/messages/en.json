@@ -1,0 +1,45 @@
+{
+  "common": {
+    "title": "Practice Shadowing with any video you love",
+    "videoList": "Video List",
+    "myVideos": "My Videos",
+    "recentlyViewed": "Recently Viewed",
+    "streak": "Streak",
+    "upgrade": "Upgrade to Plus",
+    "language": "Language",
+    "youtube": "Youtube",
+    "upload": "Upload",
+    "placeholder": "Paste Youtube link to start",
+    "selectLanguage": "Select language",
+    "selectSubtitle": "Select subtitle",
+    "withSubtitle": "With subtitle",
+    "noSubtitle": "No subtitle",
+    "createVideo": "Create video"
+  },
+  "tabs": {
+    "allVideos": "All",
+    "news": "News",
+    "beginner": "Beginner",
+    "podcast": "Podcast",
+    "technology": "Technology",
+    "business": "Business",
+    "ted": "TED",
+    "grammar": "Grammar",
+    "animation": "Animation",
+    "shortVideo": "Short Video",
+    "movie": "Movie",
+    "travel": "Travel",
+    "culture": "Culture",
+    "food": "Food",
+    "kids": "Kids"
+  },
+  "time": {
+    "level": "N5 - N4",
+    "views": "views",
+    "ago": "ago",
+    "hour": "hour",
+    "days": "days",
+    "month": "month"
+  },
+  "weekDays": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+}

@@ -1,0 +1,45 @@
+{
+  "common": {
+    "title": "シャドーイングを練習して、お気に入りの動画を通じて学習",
+    "videoList": "動画リスト",
+    "myVideos": "私の動画",
+    "recentlyViewed": "最近見た動画",
+    "streak": "ストリーク",
+    "upgrade": "Plusにアップグレード",
+    "language": "言語",
+    "youtube": "Youtube",
+    "upload": "アップロード",
+    "placeholder": "Youtubeリンクを貼り付けて開始",
+    "selectLanguage": "言語を選択",
+    "selectSubtitle": "字幕を選択",
+    "withSubtitle": "字幕あり",
+    "noSubtitle": "字幕なし",
+    "createVideo": "動画を作成"
+  },
+  "tabs": {
+    "allVideos": "全て",
+    "news": "ニュース",
+    "beginner": "初心者",
+    "podcast": "ポッドキャスト",
+    "technology": "テクノロジー",
+    "business": "ビジネス",
+    "ted": "TED",
+    "grammar": "文法",
+    "animation": "アニメ",
+    "shortVideo": "ショート動画",
+    "movie": "映画",
+    "travel": "旅行",
+    "culture": "文化",
+    "food": "料理",
+    "kids": "キッズ"
+  },
+  "time": {
+    "level": "N5 - N4",
+    "views": "ビュー",
+    "ago": "前",
+    "hour": "時間",
+    "days": "日",
+    "month": "ヶ月"
+  },
+  "weekDays": ["月", "火", "水", "木", "金", "土", "日"]
+}
