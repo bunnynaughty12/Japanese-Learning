@@ -5,7 +5,7 @@ on:
     branches:
       - main
       - dev
-      - deploy
+      - production
     paths:
       - 'learningApp/**'
       - 'tool/**'
