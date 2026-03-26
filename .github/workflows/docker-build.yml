@@ -6,6 +6,7 @@ on:
       - main
       - dev
       - production
+      - deploy
     paths:
       - 'learningApp/**'
       - 'tool/**'
@@ -53,13 +54,13 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     needs: build_and_push
-    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/dev' || github.ref == 'refs/heads/deploy'
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/dev' || github.ref == 'refs/heads/production' || github.ref == 'refs/heads/deploy'
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v5
 
-      - name: Copy docker-compose.yml to EC2
+      - name: Copy docker-compose.yml and .env to EC2
         uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.EC2_HOST }}
@@ -78,6 +79,7 @@ jobs:
           script: |
             cd ~/app
             export APP_IMAGE=${{ secrets.DOCKERHUB_USERNAME }}/learning-app:${{ github.sha }}
-            docker-compose pull
-            docker-compose up -d --force-recreate
+            # Nếu có file .env trên EC2 thì Docker Compose sẽ tự nhận
+            docker compose pull
+            docker compose up -d --force-recreate
             docker image prune -f
