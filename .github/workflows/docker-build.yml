@@ -45,9 +45,7 @@ jobs:
           context: ./learningApp
           file: ./learningApp/Dockerfile
           push: true
-          tags: |
-            ${{ secrets.DOCKERHUB_USERNAME }}/learning-app:latest
-            ${{ secrets.DOCKERHUB_USERNAME }}/learning-app:${{ github.sha }}
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/learning-app:${{ github.sha }}, ${{ secrets.DOCKERHUB_USERNAME }}/learning-app:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
@@ -60,13 +58,13 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v5
 
-      - name: Copy docker-compose.yml and .env to EC2
+      - name: Copy docker-compose.yml and tool folder to EC2
         uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USERNAME }}
           key: ${{ secrets.EC2_SSH_KEY }}
-          source: "./learningApp/docker-compose.yml"
+          source: "./learningApp/docker-compose.yml,./tool"
           target: "~/app"
           strip_components: 1
 
@@ -79,7 +77,7 @@ jobs:
           script: |
             cd ~/app
             export APP_IMAGE=${{ secrets.DOCKERHUB_USERNAME }}/learning-app:${{ github.sha }}
-            # Nếu có file .env trên EC2 thì Docker Compose sẽ tự nhận
+            # Khởi động Docker Compose
             docker compose pull
             docker compose up -d --force-recreate
             docker image prune -f
