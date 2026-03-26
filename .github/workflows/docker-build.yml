@@ -75,7 +75,7 @@ jobs:
           username: ${{ secrets.EC2_USERNAME }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            cd ~/app
+            cd ~/app/learningApp
             export APP_IMAGE=yennhi1712/learning-app:${{ github.sha }}
             # Khởi động Docker Compose
             docker compose pull
